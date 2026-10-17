@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="AURON_SKELETON" size="0.200000 0.266667" />
+    <ImageTarget name="AURON_CHRONO" size="0.200000 0.266667" />
+    <ImageTarget name="AURON_CLASSIC" size="0.200000 0.266667" />
+  </Tracking>
+</QCARConfig>
