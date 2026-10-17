@@ -144,31 +144,35 @@ Use **SFX** and **WIND** for the corresponding sound and watch-interaction contr
 
 ## 🖼️ Screenshots & Demo
 
-Add real screenshots from the app to `docs/screenshots/`. Recommended captures are listed below. These filenames are suggestions; use the same names if you want the gallery paths to match the README.
+### 1. Main Watch Experience
+![AURON Main Watch View](docs/screenshots/01-main-watch-view.jpg)
 
-| Screenshot | Suggested filename | What to show |
-|---|---|---|
-| Main watch view | `01-main-watch-view.png` | Assembled watch and main interface |
-| Exploded view | `02-exploded-watch.png` | Separated mechanical components |
-| Gear inspection | `03-gear-inspection.png` | Highlighted gear and specifications |
-| Finish selector | `04-watch-finishes.png` | The four case/bracelet finishes |
-| Wrist try-on | `05-live-wrist-try-on.png` | Watch placed on a wrist through the camera |
-| Night glow | `06-lume-mode.png` | Luminous watch presentation |
-| Snapshot | `07-boutique-snapshot.png` | Framed photo saved by SNAP |
-| Website | `08-website-homepage.png` | A screenshot of the live website |
+### 2. Exploded Mechanical View
+![AURON Exploded Watch](docs/screenshots/02-exploded-watch.jpg)
 
-After adding the screenshots, you can embed them in this section like this:
+### 3. Gear Inspection
+![AURON Gear Inspection](docs/screenshots/03-gear-inspection.jpg)
 
-```md
-<p align="center">
-  <img src="docs/screenshots/01-main-watch-view.png" width="48%" alt="AURON main watch view" />
-  <img src="docs/screenshots/02-exploded-watch.png" width="48%" alt="AURON exploded mechanical view" />
-</p>
-```
+### 4. Watch Customization
+![AURON Watch Finishes](docs/screenshots/04-watch-finishes.jpg)
 
-*The package includes the brand banner, but not real in-app screenshots. Add your own captures so the README gallery shows the actual app.*
+### 5. Live AR Wrist Try-On
+![AURON Live Wrist Try-On](docs/screenshots/05-live-wrist-try-on.jpg)
 
----
+### 6. Super-LumiNova Night Glow
+![AURON Lume Mode](docs/screenshots/06-lume-mode.jpg)
+
+### 7. Boutique Snapshot
+![AURON Boutique Snapshot](docs/screenshots/07-boutique-snapshot.png)
+
+### 8. AURON Website
+![AURON Website Homepage](docs/screenshots/08-website-homepage.jpg)
+
+🌐 **Live Website:** https://mihadkazi1.github.io/auron-watch-website/
+
+
+
+
 
 ## 🧰 Technology Stack
 
