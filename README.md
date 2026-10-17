@@ -45,6 +45,8 @@ The experience follows this flow:
   <a href="https://github.com/mihadkazi1/AURON-Watch-AR/releases"><strong>📲 Android APK Releases</strong></a>
 </p>
 
+---
+
 ## 🖼️ App Screenshots
 
 <p align="center"><em>Selected views from the AURON AR experience</em></p>
@@ -100,8 +102,6 @@ The experience follows this flow:
   </tr>
 </table>
 
-> **Image paths:** The gallery expects the eight images to be uploaded to `docs/screenshots/` with exactly the filenames shown above. The logo banner should be available at `docs/assets/auron-logo-banner.jpg`. If your files have different extensions or spelling, update the matching paths in this README.
-
 ---
 
 ## ✨ Key Features
@@ -109,35 +109,34 @@ The experience follows this flow:
 ### 🕰️ Interactive 3D Watch Exploration
 - Rotate and inspect the watch using touch or mouse controls.
 - Pinch to zoom on supported touch screens.
-- Use the automatic turntable presentation mode.
+- Automatic 360° turntable showcase mode after idle timeout (snaps back to normal size and pose on touch).
+- Pull out the crown (`WIND`) in 3D View and swipe vertically to manually wind the mainspring and accelerate the internal gear train.
 
 ### ⚙️ Exploded View & Mechanical Inspection
-- Animate the watch into its mechanical layers for a closer look.
-- Inspect the separated components, including the watch layers, crown, and strap.
-- Tap supported components to highlight gears and view technical information.
-- Reassemble the watch with a structured animation.
+- Animate the watch into its 13 mechanical layers (`Cube.003` to `Empty.012`), crown (`Empty.013`), and strap (`Empty.014`).
+- Tap individual floating components in Inside mode to highlight gears in gold and view horological specifications.
+- Reassemble the watch with a structured layer-by-layer animation and synchronized mechanical locking audio.
 
 ### 🎨 Premium Finish Customization
-Choose from four finishes:
-- **Obsidian Black**
-- **18K Rose Gold**
-- **Royal Yellow Gold**
-- **Platinum 950**
+Choose from four finishes live in 3D View or Wrist Try-On:
+- **Obsidian Black** (`BLK`)
+- **18K Rose Gold** (`ROSE`)
+- **Royal Yellow Gold** (`GOLD`)
+- **Platinum 950** (`PLAT`)
 
 ### 🌙 Super-LumiNova™ Night Glow
-Enable luminous presentation to showcase the watch in a low-light style.
+Toggle `LUME` to dim ambient studio lighting and illuminate the geometric skeleton dial and movement with luminescent night-glow emission.
 
 ### 🖐️ Live Virtual Wrist Try-On
-- Uses MediaPipe hand landmarks to estimate hand and wrist position.
-- Anchors a watch model to the tracked wrist in camera view.
-- Includes wrist-size options: **36 mm, 40 mm, 42 mm, and 46 mm**.
-- Includes hand-pose filtering designed to keep tracking stable for an open hand or a fist.
+- Uses MediaPipe 21-point hand landmarks to estimate 3D wrist position and orientation in real time.
+- Includes four live case-diameter options: **36 mm, 40 mm, 42 mm, and 46 mm**.
+- Uses palm-and-knuckle geometry validation (`ScorePlausibleHandOrFist`) to reject background false positives while keeping tracking locked whether your hand is open or closed into a fist.
 
 ### 📸 Boutique Snapshot
-Capture a wrist try-on image with an AURON-inspired dark-and-gold frame and save it to the device gallery, subject to Android permissions and device support.
+Tap `SNAP` to capture a clean AR wrist photo framed in an obsidian-and-gold **AURON Genève** border and save it directly to your device's Gallery (`Pictures/AURON`).
 
 ### 🔊 Mechanical Audio Details
-Procedural escapement-style clicks and synchronized sounds complement watch reassembly and interaction.
+Toggle `SFX` for procedural 28,800 vph Swiss lever escapement clicks, crown-winding ratchet audio, and multi-layer mechanical reassembly sounds.
 
 ---
 
@@ -145,41 +144,32 @@ Procedural escapement-style clicks and synchronized sounds complement watch reas
 
 ### 1. Install and launch
 1. Open the [AURON-Watch-AR Releases page](https://github.com/mihadkazi1/AURON-Watch-AR/releases).
-2. Download the APK attached to the latest published release. If no APK asset is listed, a public app build has not yet been attached to a release.
-3. Install the APK on a compatible Android phone. If prompted, allow installation from the source you used to download it.
-4. Launch AURON AR and allow camera access when Android asks.
+2. Download the APK attached to the latest published release.
+3. Install the APK on a compatible Android phone. If prompted, allow installation from your browser or file manager.
+4. Launch AURON AR and grant camera access when prompted.
 
 ### 2. Scan a watch target displayed on the website
 **Use two devices** for the easiest scan: your Android phone for the app and a computer or second phone to display the target.
 
-1. Open the [AURON Watch website](https://mihadkazi1.github.io/auron-watch-website/) on the computer or second device.
-2. Find and display one of the available AURON target images: **Classic**, **Chrono**, or **Skeleton**. Keep the image fully visible, bright, and steady on the screen.
-3. Open AURON AR on your Android phone and enter the image-target scanning experience.
-4. Point the phone camera at the target image displayed on the other screen.
-5. Hold the camera steady until Vuforia recognizes the target and the 3D watch appears.
-
-**Scanning requirements:** The displayed image must match a target configured in the Vuforia database used by the installed app. Website images are scan targets only if their matching target images have been included in that Vuforia database. Screen glare, reflections, low brightness, cropping, or a small target image can affect recognition. You can also use a printed copy of a registered target.
+1. Open the [AURON Watch website](https://mihadkazi1.github.io/auron-watch-website/) on your computer or second device.
+2. Display one of the available AURON target images (**Classic**, **Chrono**, or **Skeleton**). Keep the image bright, flat, and fully visible on screen.
+3. Open AURON AR on your Android phone and tap **Explore AR Watch**.
+4. Point the phone camera at the target image until Vuforia recognizes the target and locks the 3D watch into view.
 
 ### 3. Explore the watch
-- Rotate the model and zoom in to inspect its design.
-- Enter **Inside** or exploded mode to reveal the mechanical layers.
-- Tap supported components to inspect their highlights and specifications.
-- Use the reassemble control to restore the watch.
+- Drag to rotate the model, pinch to zoom, or tap `WIND` to pull out the crown and wind the movement.
+- Tap **INSIDE** to separate the watch into its mechanical layers and tap any gear to inspect its specifications.
+- Tap **REASSEMBLE** to lock the movement layers back into the case.
 
 ### 4. Customize the appearance
-- Select a finish: Obsidian Black, 18K Rose Gold, Royal Yellow Gold, or Platinum 950.
-- Try Super-LumiNova night-glow mode where available.
-- Adjust the wrist-size setting while using Try-On mode.
+- Tap `BLK`, `ROSE`, `GOLD`, or `PLAT` to switch case and bracelet finishes.
+- Tap `LUME` to toggle Super-LumiNova™ night-glow optics.
+- Tap `SFX` to toggle the mechanical escapement sound on or off.
 
 ### 5. Try it on and capture a photo
-1. Enter **Try-On** mode.
-2. Keep your hand and wrist visible within the camera view and allow tracking to settle.
-3. Move naturally while the watch follows the estimated wrist position.
-4. Use **SNAP** to capture an image. If prompted, grant the required media or photo permissions.
-5. Look for saved images in the device's Pictures/AURON location or Gallery/Photos app; exact behavior may vary by Android version and device.
-
-### Single-phone note
-If the phone is displaying AURON AR, it generally cannot simultaneously show the website target in front of its own camera. Use a second screen or a printed registered target for scanning.
+1. Tap **TRY ON** and hold your wrist in front of the camera.
+2. Compare **36MM**, **40MM**, **42MM**, and **46MM** case sizes directly on your wrist.
+3. Tap **SNAP** to capture and save a boutique-framed photo directly to your phone's Gallery (`Pictures/AURON`).
 
 ---
 
@@ -187,53 +177,45 @@ If the phone is displaying AURON AR, it generally cannot simultaneously show the
 
 | Technology | Purpose |
 |---|---|
-| Unity 6.3 LTS | Real-time 3D app and Android build |
-| C# | Interaction, UI, AR, customization, and capture logic |
-| Vuforia Engine | Image-target recognition and AR camera pipeline |
-| Google MediaPipe Unity Plugin | Hand landmark estimation for wrist try-on |
-| TextMeshPro | In-app text and interface labels |
-| Android native MediaStore integration | Saving captured images to the gallery |
+| Unity 6.3 LTS | Real-time 3D rendering, physics, and Android build pipeline |
+| C# | Interaction, procedural UI, AR pose math, material customization, and procedural audio |
+| Vuforia Engine | Image-target recognition and live AR camera frame provider |
+| Google MediaPipe Unity Plugin | 21-point 3D hand and wrist landmark estimation |
+| TextMeshPro | High-resolution in-app typography and horology callouts |
+| Android MediaStore API | Native gallery image insertion on Android 10+ |
 
 ## 🏗️ Core Scripts & Architecture
 
-| Script | Responsibility |
+| Script / Asset | Responsibility |
 |---|---|
-| `AuronWatchExperience.cs` | 3D orbit/zoom, auto-turntable, exploded/reassemble sequence, gear inspection, finishes, and lume mode |
-| `AuronTryOnController.cs` | Creates and positions the try-on watch, controls wrist attachment, and manages sizing |
-| `AuronVuforiaHandLandmarker.cs` | Connects MediaPipe hand landmarks to the AR experience and applies hand-pose checks |
-| `AURONUI.cs` | Luxury interface controls and contextual actions |
-| `AuronLuxuryFeatures.cs` | Supporting premium audio-visual features and snapshot presentation |
+| `AuronWatchExperience.cs` | 3D orbit/zoom controls, exploded/reassemble layer animation, and crown pull mechanics |
+| `AuronLuxuryFeatures.cs` | Finish customizer (`BLK`/`ROSE`/`GOLD`/`PLAT`), `LUME` night glow, gear tap inspection, crown winding (`WIND`), auto-turntable, procedural escapement audio (`SFX`), and boutique snapshot (`SNAP`) |
+| `AuronTryOnController.cs` | Clones and anchors the watch to the tracked wrist in camera space, manages 36–46 mm case sizing, and handles pose smoothing |
+| `AuronVuforiaHandLandmarker.cs` | Runs MediaPipe hand landmark detection on Vuforia camera frames and validates open-hand/fist geometry |
+| `AuronVuforiaCameraFrame.cs` | Bridges live Vuforia camera textures to MediaPipe |
+| `AURONUI.cs` | Core luxury interface layout, mode switching (`3D VIEW`, `INSIDE`, `TRY ON`), and status header |
+
+---
 
 ## 🛠️ Developer Setup
 
-The following steps are for developers who want to open and modify the Unity project.
-
 1. Clone or download this repository.
-2. Open the project using the intended Unity version (**Unity 6.3 LTS**).
-3. Allow Unity to resolve packages and import assets.
-4. Verify that the Vuforia license/configuration and image-target database used by the app are set up for your environment.
-5. Verify that the MediaPipe model file `hand_landmarker.bytes` exists at the expected StreamingAssets path and is included in the project.
-6. Open the intended startup scene and check that required scenes are included in Build Settings.
-7. Connect an Android device and test the camera, image-target tracking, wrist try-on, and photo saving on-device.
-
-### Build an Android APK
-1. In Unity, open **File → Build Profiles** (or **File → Build Settings**, depending on the Unity UI).
-2. Select Android and switch platform if needed.
-3. Confirm the app's scenes, package identifier, permissions, and Vuforia configuration.
-4. For a release build, disable **Development Build** and configure your own signing keystore under the Android Publishing Settings.
-5. Build the APK and test it on a physical Android device before distributing it.
-
-**Signing-key warning:** Keep the keystore and its passwords private and backed up securely. Do not commit them to GitHub.
+2. Open the project in **Unity 6.3 LTS**.
+3. Allow Unity Package Manager to resolve dependencies.
+4. Verify that your Vuforia license key and target database are configured in `VuforiaConfiguration`.
+5. Confirm that `hand_landmarker.bytes` is present in `Assets/StreamingAssets/`.
+6. Open the main scene, switch platform to **Android** under **File → Build Profiles**, and build/run on an Android device.
 
 ---
 
 ## 🧩 Troubleshooting
 
-- **The watch does not appear after scanning:** Check that the image is registered in the app's Vuforia target database, fully visible, adequately lit, and not cropped.
-- **The camera is black or unavailable:** Check Android camera permission, camera configuration, and device compatibility.
-- **The wrist try-on is unstable:** Improve lighting, keep the wrist in view, avoid strong motion blur, and confirm that the MediaPipe model asset is present.
-- **The screenshot is not saved:** Check the app's permissions and the Android device's Gallery/Photos app. Behavior can vary across Android versions.
-- **A screenshot does not render in this README:** Confirm the image is uploaded to `docs/screenshots/` and the filename, capitalization, and extension match the path written in this file.
+- **The watch does not appear after scanning:** Ensure the target image is bright, uncropped, and free of screen glare.
+- **The camera is black or unavailable:** Verify that Android camera permissions are granted in your device settings.
+- **The wrist try-on is unstable:** Ensure your wrist is well-lit and clearly visible inside the camera frame.
+- **The screenshot is not saved:** Check your device's **Gallery / Photos → Albums → AURON** (or `Pictures/AURON` in file storage).
+
+---
 
 ## 🔗 Project Links
 
